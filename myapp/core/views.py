@@ -4,5 +4,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-   text = """<h1>our test 5 of mind blowing home page</h1>"""
+   text = """<h1>simple home page</h1>"""
    return HttpResponse(text)
