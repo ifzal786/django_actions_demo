@@ -24,3 +24,12 @@ jobs:
 
   builds:
     runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: [2.7, 3.6, 3.8]
+    steps:
+      run: |
+        python3 manage.py test
+        
+    
