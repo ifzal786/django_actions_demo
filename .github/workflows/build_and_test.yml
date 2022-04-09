@@ -7,12 +7,12 @@ on:
     branches: [main]
 
 jobs:
-  pre-test:
-    runs-on:  ${{ matrix.os }}
-    strategy:
+  strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
         python: [2.7, 3.6, 3.8]
+  pre-test:
+    runs-on:  ${{ matrix.os }}   
     
     steps:
     - name: Checkout code
