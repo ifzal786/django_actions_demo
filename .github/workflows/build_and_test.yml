@@ -33,6 +33,7 @@ jobs:
     steps:
     - name: tests
       run: |
+        cd myapp
         python3 manage.py test
         
     
